@@ -1,0 +1,14 @@
+config interface 'proton'
+        option proto 'wireguard'
+        option private_key 'YOUR_PRIVATE_KEY'
+        list addresses '10.2.0.2/32'
+        list dns '10.2.0.1'
+
+config wireguard_proton
+        option description 'Imported peer configuration'
+        option public_key 'YOUR_PUBLIC_KEY'
+        list allowed_ips '0.0.0.0/0'
+        list allowed_ips '::/0'
+        option persistent_keepalive '25'
+        option endpoint_host '185.132.179.13'
+        option endpoint_port '51820'
