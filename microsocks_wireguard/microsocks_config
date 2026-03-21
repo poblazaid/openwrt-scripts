@@ -1,0 +1,6 @@
+uci set microsocks.config=microsocks
+uci set microsocks.config.enabled='1'
+uci set microsocks.config.listenip='192.168.1.254'
+uci set microsocks.config.port='3189'
+uci set microsocks.config.quiet='1'
+uci set microsocks.config.bindaddr='10.2.0.2'
